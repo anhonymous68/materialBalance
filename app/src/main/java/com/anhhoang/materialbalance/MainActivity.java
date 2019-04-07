@@ -23,12 +23,13 @@ public class MainActivity extends AppCompatActivity
         button = findViewById(R.id.button);
         editText = findViewById(R.id.editText);
         textView = findViewById(R.id.textView);
+        textView.setText("23");
         button.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                String string = editText.getText().toString();
+                String string = textView.getText().toString();
                 int num = Integer.parseInt(string);
                 num = sum(num);
 
